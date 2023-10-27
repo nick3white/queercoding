@@ -44,8 +44,7 @@ export default component$(() => {
       >
         <h2>Welcome to</h2>
         <h1>Queer Coding</h1>
-        <h3>like coding, but this time for gays</h3>
-        <p>and their allies, besties, and bros</p>
+        <p>like coding, but this time for gays</p>
       </article>
     </main>
   );
