@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 import { css } from "~/styled-system/css";
 const bars = [0, 7, 20, 36];
-const rectangles = [3, 4, 12, 23, 25, 27, 31, 35];
-const bigsquares = [17, 37, 42];
+const rectangles = [3, 4, 12, 23, 25, 27, 31, 35, 45];
+const bigsquares = [17, 37, 40, 41];
 const headers = [
   "Featured content!  FEEEEATURRED CONNTEENNNNTTT!!!!",
   "Check out these boxes! They are links to extremely amazing content",
