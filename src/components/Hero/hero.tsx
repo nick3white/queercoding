@@ -1,6 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 import { css } from "~/styled-system/css";
 
+// export interface HeroProps {
+//
+// }
+// export const Hero = component$<HeroProps>((props) => {
+
 interface Color {
   color: string;
   hex: string;
@@ -13,7 +18,7 @@ interface Flag {
   colors: Color[];
 }
 
-const flags: Flag[] = [
+export const flags: Flag[] = [
   {
     name: "agender",
     colors: [
@@ -245,7 +250,7 @@ const flags: Flag[] = [
     ],
   },
 ];
-export const Background = component$(() => {
+export const Hero = component$(() => {
   return (
     <div
       class={css({
@@ -254,13 +259,14 @@ export const Background = component$(() => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        position: "relative",
+        position: "absolute",
         // position: "sticky",
         // top: 0,
         width: "100%",
         height: "100%",
       })}
     >
+      ok
       {flags.map((flag) => (
         <section
           class={css({
@@ -272,25 +278,6 @@ export const Background = component$(() => {
           })}
           key={flag.name}
         >
-          <div
-            class={css({
-              position: "absolute",
-              top: 0,
-              right: 0,
-              bottom: 0,
-              left: 0,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              opacity: 0.01,
-              transition: "250ms",
-              "&:hover": {
-                opacity: 0.99,
-              },
-            })}
-          >
-            {flag.name}
-          </div>
           {flag.colors.map((color: Color) => (
             <div
               class="color"

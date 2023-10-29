@@ -17,19 +17,52 @@ html {
   -o-tab-size: 4;
   tab-size: 4;
   font-family: "ubuntu", monospace;
-}
 
+  --splash: 136, 58, 234;
+  --splash-light: 224, 204, 250;
+  --splash-dark: 49, 10, 101;
+
+  --splash-gradient: linear-gradient(
+    rgba(var(--splash-dark), 66%),
+    rgba(var(--splash-dark), 33%)
+  );
+}
+.actual-real-header,
 body {
-  background: #333;
+  background: linear-gradient(
+    45deg,
+    rgba(214, 2, 112, 1) 0%,
+    rgb(155, 79, 150, 1) 50%,
+    rgba(0, 56, 168, 1) 100%
+  );
+  background-attachment: fixed;
   padding: 0;
-  line-height: inherit;
 }
 body.dark {
-  --bgFilter: blur(20px) brightness(20%);
+  --bgFilter: blur(10px) brightness(20%);
   --fontColor: #ccc;
 }
 
 body.light {
-  --bgFilter: blur(20px) brightness(120%);
+  --bgFilter: blur(10px) brightness(120%);
   --fontColor: #333;
 }
+/* colors: [ */
+/*       { */
+/*         color: "Pink", */
+/*         linear-gradient(45deg, rgba(214, 2, 112,1) 0%,  rgb(155, 79, 150, 1) 50%, rgba(0, 56, 168, 1) 100%); */
+/*       }, */
+/*       { */
+/*         color: "Purple", */
+/*         hex: "9B4F96", */
+/*        , */
+/*         cmyk: [0, 49, 3, 39], */
+/*       }, */
+/*       { */
+/*         color: "Blue", */
+/*         hex: "0038A8", */
+/*         rgb: [0, 56, 168], */
+/*         cmyk: [100, 67, 0, 34], */
+/*       }, */
+/*     ], */
+/**/
