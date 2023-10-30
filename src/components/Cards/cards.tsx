@@ -3,6 +3,7 @@ import { css } from "~/styled-system/css";
 const bars = [0, 7, 20, 36];
 const rectangles = [3, 4, 12, 23, 25, 27, 31, 35, 45];
 const bigsquares = [17, 37, 40, 41];
+// const leftOffAt = "phoenix project 2:22:39";
 const headers = [
   "Featured content!  FEEEEATURRED CONNTEENNNNTTT!!!!",
   "Check out these boxes! They are links to extremely amazing content",
@@ -46,6 +47,8 @@ export const Cards = component$(() => {
           gridRow: "span 1",
           aspectRatio: "4 / 1",
           textAlign: "center",
+          textShadow:
+            "0 0 5px #333, 0 0 10px #333, 0 0 20px #333, 0 0 40px #333, 0 0 80px #333",
         },
         "& .box, .bar": {
           display: "flex",

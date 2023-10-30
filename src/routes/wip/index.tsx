@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { Cards } from "~/components/Cards/cards";
+// import { ThemeSelector } from "~/components/ThemeSelector/themeselector";
 import { css } from "~/styled-system/css";
 
 export default component$(() => {
@@ -21,46 +22,22 @@ export default component$(() => {
           // background:
           //   "repeating-linear-gradient(45deg, rgba(26, 39, 118, 1), rgba(26, 39, 118, 1) 10px, rgba(0, 12, 72, 1) 10px, rgba(0, 12, 72, 1) 20px)",
         },
-        "& .hero": {
-          marginTop: "133px",
-          height: "50vh",
-          width: "100%",
-          position: "relative",
-          "& .hero-text": {
-            position: "absolute",
-            top: 0,
-            left: 0,
-            bottom: 0,
-            right: 0,
-            height: "100%",
-            backdropFilter: "var(--bgFilter)",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            "& p": {
-              fontSize: "33px",
-              color: "var(--fontColor)",
-            },
-          },
-        },
         "& h1": {
+          fontFamily: "big-blue",
+          textShadow:
+            "0 0 5px #333, 0 0 10px #333, 0 0 20px #333, 0 0 40px #333, 0 0 80px #333",
+          fontSize: "clamp(2rem, 7vw, 3.3rem)",
           marginTop: "37vh",
           position: "sticky",
           top: 0,
           zIndex: 9001,
           textAlign: "center",
-          fontSize: "77px",
-          lineHeight: "77px",
+          lineHeight: "100px",
           color: "var(--fontColor)",
         },
       })}
     >
-      <header class="actual-real-header">
-        {/* <ul class="links"> */}
-        {/*   <li>a link</li> */}
-        {/* </ul> */}
-      </header>
+      <header class="actual-real-header">{/* <ThemeSelector /> */}</header>
       <h1>Queer Coding</h1>
       <main>
         <Cards />
