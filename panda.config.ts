@@ -1,5 +1,21 @@
 import { defineConfig } from "@pandacss/dev";
 
+const config = {
+  conditions: {
+    arst: "[data-theme=arst]",
+    flowersBerries: "[data-theme=flowers-berries]",
+    flowers: "[data-theme=flowers]",
+    flowersWithSun: "[data-theme=flowers-with-sun]",
+    growing: "[data-theme=growing]",
+    ibm: "[data-theme=ibm]",
+    nightlights: "[data-theme=nightlights]",
+    trees: "[data-theme=trees]",
+    winterChicago: "[data-theme=winter-chicago]",
+    winter: "[data-theme=winter]",
+    wood: "[data-theme=wood]",
+  },
+};
+
 export default defineConfig({
   jsxFramework: "qwik",
 
