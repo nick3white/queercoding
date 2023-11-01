@@ -1,5 +1,6 @@
-import { component$, useStyles$ } from "@builder.io/qwik";
-import styles from "./cards.css?inline";
+import { component$ } from "@builder.io/qwik";
+// import { component$, useStyles$ } from "@builder.io/qwik";
+// import styles from "./cards.css?inline";
 // import { css } from "~/styled-system/css";
 const bars = [0, 7, 20, 36];
 const rectangles = [3, 4, 12, 23, 25, 27, 31, 35, 45];
@@ -12,7 +13,6 @@ const headers = [
   "we probably can't fill all these, but w/e, I like making boxes",
 ];
 export const Cards = component$(() => {
-  useStyles$(styles);
   return (
     <div class="container">
       <div class="grid-container">
