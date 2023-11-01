@@ -34,7 +34,11 @@ export const ThemeSelector = component$(() => {
           style={`background-image: url("sm${th}.jpg"); width: ${Math.floor(
             (1 / themes.length) * 100,
           )}vw`}
-          class={`theme-btn ${th === theme ? "vis" : "invis"}`}
+          class={`theme-btn ${
+            th === theme || (th === "arst" && theme === "undefined")
+              ? "vis"
+              : "invis"
+          }`}
           onClick$={() => setTheme(th)}
         ></button>
       ))}
