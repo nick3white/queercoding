@@ -13,11 +13,12 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "Welcome to Queer Coding!",
   meta: [
     {
       name: "description",
-      content: "Qwik site description",
+      content:
+        "A site to help people in and around the LGBT community learn to code.",
     },
   ],
 };
