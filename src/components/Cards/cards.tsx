@@ -1,5 +1,6 @@
-import { component$ } from "@builder.io/qwik";
-import { css } from "~/styled-system/css";
+import { component$, useStyles$ } from "@builder.io/qwik";
+import styles from "./cards.css?inline";
+// import { css } from "~/styled-system/css";
 const bars = [0, 7, 20, 36];
 const rectangles = [3, 4, 12, 23, 25, 27, 31, 35, 45];
 const bigsquares = [17, 37, 40, 41];
@@ -11,62 +12,9 @@ const headers = [
   "we probably can't fill all these, but w/e, I like making boxes",
 ];
 export const Cards = component$(() => {
+  useStyles$(styles);
   return (
-    <div
-      class={css({
-        "& h2, h3": {
-          fontSize: "33px",
-        },
-        "& .grid-container": {
-          width: "75vw",
-          margin: "auto",
-          display: "grid",
-          gridTemplateColumns: "repeat(4, 1fr)",
-          gridTemplateRows: "1fr",
-          // gap: "10px",
-        },
-        "& .sq1x1": {
-          gridColumn: "span 1",
-          gridRow: "span 1",
-        },
-
-        "& .sq2x2": {
-          gridColumn: "span 2",
-          gridRow: "span 2",
-        },
-        "& .rect": {
-          gridColumn: "span 2",
-          gridRow: "span 1",
-          aspectRatio: "2 / 1",
-        },
-        "& .sq1x1, .sq2x2": {
-          aspectRatio: "1 / 1",
-        },
-        "& .bar": {
-          gridColumn: "span 4",
-          gridRow: "span 1",
-          aspectRatio: "4 / 1",
-          textAlign: "center",
-          textShadow:
-            "0 0 5px #333, 0 0 10px #333, 0 0 20px #333, 0 0 40px #333, 0 0 80px #333",
-        },
-        "& .box, .bar": {
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          color: "var(--fontColor)",
-          position: "relative",
-        },
-        "& .box": {
-          background: "rgba(0, 0, 0, 0.2)",
-          border: "1px solid rgba(0,0,0, 0.7)",
-        },
-        "& .box:hover": {
-          background:
-            "repeating-linear-gradient(45deg, rgba(26, 39, 118, 0.1), rgba(26, 39, 118, 0.1) 10px, rgba(0, 12, 72, 0.2) 10px, rgba(0, 12, 72, 0.2) 20px)",
-        },
-      })}
-    >
+    <div class="container">
       <div class="grid-container">
         {Array.from({ length: 47 }).map((_, i) => (
           <div
@@ -82,7 +30,7 @@ export const Cards = component$(() => {
             }
           >
             {bars.includes(i) ? (
-              <h3>{headers[Math.round((i / 47) * 4)]}</h3>
+              <h3 class="surface-1">{headers[Math.round((i / 47) * 4)]}</h3>
             ) : (
               <span>{i}</span>
             )}

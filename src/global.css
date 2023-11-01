@@ -1,9 +1,4 @@
-/**
- * PandaCSS CSS layers
- * View the full documentation at https://panda-css.com/docs/concepts/cascade-layers#layer-css
- */
-@layer reset, base, tokens, recipes, utilities;
-
+@import "themes.css";
 /**
  * WHAT IS THIS FILE?
  *
@@ -11,97 +6,83 @@
  * the styles in here will be applied to the Document, without any sort of CSS scoping.
  *
  */
-html {
-  -webkit-text-size-adjust: 100%;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  font-family: "ubuntu", monospace;
 
-  --splash: 136, 58, 234;
-  --splash-light: 224, 204, 250;
-  --splash-dark: 49, 10, 101;
-
-  --splash-gradient: linear-gradient(
-    rgba(var(--splash-dark), 66%),
-    rgba(var(--splash-dark), 33%)
-  );
-}
 @font-face {
   font-family: "big-blue";
   src: url("/BigBlueTerm437NerdFont-Regular.ttf");
 }
-.actual-real-header,
+html {
+  /* -webkit-text-size-adjust: 100%; */
+  /* -moz-tab-size: 4; */
+  /* -o-tab-size: 4; */
+  tab-size: 4;
+  font-family: "ubuntu", monospace;
+}
+
 body {
-  /* background: linear-gradient( */
-  /*   45deg, */
-  /*   rgba(214, 2, 112, 1) 0%, */
-  /*   rgb(155, 79, 150, 1) 50%, */
-  /*   rgba(0, 56, 168, 1) 100% */
-  /* ); */
-  /* background-attachment: fixed; */
   padding: 0;
+  line-height: inherit;
+  background: var(--wallpaper);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--foreground);
+  margin: 56px;
 }
-body.dark {
-  --bgFilter: blur(10px) brightness(20%);
-  --fontColor: #ccc;
+.surface-1 {
+  margin: 10px;
+  padding: 10px;
+  background: var(--background);
+  border: 2px solid var(--foreground);
 }
-
-body.light {
-  --bgFilter: blur(10px) brightness(120%);
-  --fontColor: #333;
+h1,
+h2,
+h3 {
+  font-family: "big-blue";
 }
-
-.agender {
-  --0: 0, 0, 0;
-  --1: 188, 196, 199;
-  --2: 255, 255, 255;
-  --3: 183, 246, 132;
+h1 {
+  font-size: clamp(2rem, 7vw, 3.5rem);
 }
-.nonbinary {
-  --0: 252, 244, 52;
-  --1: 255, 255, 255;
-  --2: 156, 89, 209;
-  --3: 0, 0, 0;
+h2,
+h3 {
+  font-size: clamp(1.66rem, 6vw, 3rem);
 }
-.genderfluid {
-  --0: 255, 118, 164;
-  --1: 255, 255, 255;
-  --2: 192, 17, 215;
-  --3: 0, 0, 0;
-  --4: 47, 60, 190;
+header {
+  position: sticky;
+  top: 3px;
+  z-index: 1000;
 }
-.genderqueer {
-  --0: 181, 126, 220;
-  --1: 255, 255, 255;
-  --2: 74, 129, 35;
+header > .surface-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 11px;
 }
-.bisexual {
-  --0: 214, 2, 112;
-  --1: 155, 79, 150;
-  --2: 0, 56, 168;
+.theme-btn-container {
+  /* position: absolute; */
+  top: 3px;
+  left: 3px;
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  gap: 0;
+  margin: auto;
+  width: 1--vw;
 }
-.asexual {
-  --0: 0, 0, 0;
-  --1: 163, 163, 163;
-  --2: 255, 255, 255;
-  --3: 128, 0, 128;
+.theme-btn {
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 50px;
+  transition-delay: 2ms;
+  transition: 200ms;
 }
-.pansexual {
-  --0: 255, 33, 140;
-  --1: 255, 216, 0;
-  --2: 33, 177, 255;
+.vis,
+.theme-btn-container:hover .invis {
+  opacity: 0.99;
+  border: 1px solid var(--background);
 }
-.transgender {
-  --0: 91, 206, 250;
-  --1: 245, 169, 184;
-  --2: 255, 255, 255;
-}
-.gay {
-  --0: 228, 3, 3;
-  --1: 255, 140, 0;
-  --2: 255, 237, 0;
-  --3: 0, 128, 38;
-  --4: 0, 77, 255;
-  --5: 117, 7, 135;
+.invis {
+  opacity: 0.01;
+  border: 0;
 }
