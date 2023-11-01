@@ -12,7 +12,7 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin: "https://queercoding.org",
+        origin: "https://www.queercoding.org",
       }),
     ],
   };
