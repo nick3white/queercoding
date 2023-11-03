@@ -1,29 +1,29 @@
 :root {
-  --wallpaper: url("/arst.jpg");
-  --wallpaper-sm: url("/smarst.jpg");
+  --wallpaper: url("/nightlights.jpg");
+  --wallpaper-sm: url("/smnightlights.jpg");
 
   /* Special */
-  --background: #0e1814;
-  --foreground: #ebf0e2;
-  --cursor: #ebf0e2;
+  --background: #210a1f;
+  --foreground: #9eb9c3;
+  --cursor: #9eb9c3;
 
   /* Colors */
-  --color0: #0e1814;
-  --color1: #507499;
-  --color2: #2067d7;
-  --color3: #338cef;
-  --color4: #55a4cf;
-  --color5: #deefa4;
-  --color6: #a4cac5;
-  --color7: #ebf0e2;
-  --color8: #a4a89e;
-  --color9: #507499;
-  --color10: #2067d7;
-  --color11: #338cef;
-  --color12: #55a4cf;
-  --color13: #deefa4;
-  --color14: #a4cac5;
-  --color15: #ebf0e2;
+  --color0: #210a1f;
+  --color1: #524c57;
+  --color2: #45586d;
+  --color3: #476579;
+  --color4: #f0af46;
+  --color5: #cc8968;
+  --color6: #4a768d;
+  --color7: #9eb9c3;
+  --color8: #6e8188;
+  --color9: #524c57;
+  --color10: #45586d;
+  --color11: #476579;
+  --color12: #f0af46;
+  --color13: #cc8968;
+  --color14: #4a768d;
+  --color15: #9eb9c3;
 }
 [data-theme="arst"] {
   --wallpaper: url("/arst.jpg");

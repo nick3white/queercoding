@@ -35,7 +35,7 @@ export const ThemeSelector = component$(() => {
             (1 / themes.length) * 100,
           )}vw`}
           class={`theme-btn ${
-            th === theme || (th === "arst" && theme === "undefined")
+            th === theme || (th === "nightlights" && theme === "undefined")
               ? "vis"
               : "invis"
           }`}
