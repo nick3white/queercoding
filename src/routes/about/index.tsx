@@ -198,6 +198,34 @@ import { component$ } from "@builder.io/qwik";
 //   },
 // };
 // console.log(refactor);
+// const content = [
+//   ["/start", "getting started"],
+//   ["/you", "is this for me?"],
+//   ["/langs", "overview of languages"],
+//   ["/js", "javascript 101"],
+//   ["/react", "react 101"],
+//   ["/python", "python 101"],
+//   ["/devops", "dev ops"],
+//   ["/devsecops", "dev sec ops"],
+//   ["/gitops", "git ops"],
+//   ["/febe", "front end or back end?"],
+//   ["/infosec", "information security (infosec)"],
+//   ["/linux", "linux"],
+//   ["/cli", "whats a command line??"],
+// ];
 export default component$(() => {
-  return <div class="surface-1">about us:</div>;
+  return (
+    <div class="surface-1">
+      about us:
+      {/* <ul> */}
+      {/*   {content.map((c) => ( */}
+      {/*     <li> */}
+      {/*       mkdir -p .{c[0]} &amp;&amp; printf -- "---\ntitle: {c[1]}\n---\n\n" */}
+      {/*       &gt;&gt; '.{c[0]} */}
+      {/*       /index.mdx' */}
+      {/*     </li> */}
+      {/*   ))} */}
+      {/* </ul> */}
+    </div>
+  );
 });

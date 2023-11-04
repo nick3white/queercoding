@@ -16,7 +16,7 @@ const headers = [
 
 const content = [
   ["/start", "getting started"],
-  ["you", "is this for me?"],
+  ["/you", "is this for me?"],
   ["/langs", "overview of languages"],
   ["/js", "javascript 101"],
   ["/react", "react 101"],
