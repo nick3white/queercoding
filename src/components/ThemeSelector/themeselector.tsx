@@ -31,7 +31,7 @@ export const ThemeSelector = component$(() => {
       {themes.map((th) => (
         <button
           key={th}
-          style={`background-image: url("sm${th}.jpg"); width: ${Math.floor(
+          style={`background-image: url("/sm${th}.jpg"); width: ${Math.floor(
             (1 / themes.length) * 100,
           )}vw`}
           class={`theme-btn ${

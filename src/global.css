@@ -1,93 +1,109 @@
-@layer reset, base, tokens, recipes, utilities;
+@layer reset,
+base,
+tokens,
+recipes,
+utilities;
 @import "./themes.css";
 
 @font-face {
-  font-family: "big-blue";
-  src: url("/BigBlueTerm437NerdFont-Regular.ttf");
+    font-family: "big-blue";
+    src: url("/BigBlueTerm437NerdFont-Regular.ttf");
 }
+
 html {
-  tab-size: 4;
-  font-family: "ubuntu", monospace;
+    tab-size: 4;
+    font-family: "ubuntu", monospace;
 }
 
 body,
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body {
-  padding: 0;
-  margin: 0;
-  line-height: inherit;
-  background: var(--wallpaper);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: var(--foreground);
+    padding: 0;
+    margin: 0;
+    line-height: inherit;
+    background: var(--wallpaper);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--foreground);
 }
+
 .surface-1 {
-  padding: 10px;
-  background: var(--background);
-  border: 2px solid var(--foreground);
+    padding: 10px;
+    background: var(--background);
+    border: 2px solid var(--foreground);
 }
+
 h1,
 h2,
 h3 {
-  font-family: "big-blue";
+    font-family: "big-blue";
 }
+
 h1 {
-  font-size: clamp(2rem, 7vw, 3.5rem);
+    font-size: clamp(2rem, 7vw, 3.5rem);
 }
+
 h2,
 h3 {
-  color: var(--color1);
-  font-size: clamp(1.66rem, 6vw, 2.5rem);
+    color: var(--color1);
+    font-size: clamp(1.66rem, 6vw, 2.5rem);
 }
+
 @media screen and (max-width: 1000px) {
-  header > .surface-1 {
-    flex-direction: column;
-  }
+    header>.surface-1 {
+        flex-direction: column;
+    }
 }
+
 .theme-btn-container {
-  top: 3px;
-  left: 3px;
-  display: flex;
-  justify-content: space-evenly;
-  gap: 0;
-  margin: auto;
-  width: 1--vw;
+    top: 3px;
+    left: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0;
+    margin: auto;
+    width: 1--vw;
 }
+
 .theme-btn {
-  background-size: cover;
-  background-position: center;
-  width: 100px;
-  height: 50px;
-  transition-delay: 2ms;
-  transition: 200ms;
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 50px;
+    transition-delay: 2ms;
+    transition: 200ms;
 }
+
 .vis,
 .theme-btn-container:hover .invis {
-  opacity: 0.99;
-  border: 1px solid var(--background);
+    opacity: 0.99;
+    border: 1px solid var(--background);
 }
+
 .invis {
-  opacity: 0.01;
-  border: 0;
+    opacity: 0.01;
+    border: 0;
 }
 
 .grid-container {
-  width: 75vw;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
+    width: 75vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
 }
+
 .bar {
-  position: sticky;
-  top: 175px;
-  grid-column: span 4;
-  grid-row: span 1;
-  aspect-ratio: 4 / 1;
-  text-align: center;
-  /* text-shadow: */
-  /*     0 0 5px #333, 0 0 10px #333, 0 0 20px #333, 0 0 40px #333, 0 0 80px #333; */
+    position: sticky;
+    top: 175px;
+    grid-column: span 4;
+    grid-row: span 1;
+    aspect-ratio: 4 / 1;
+    text-align: center;
+    /* text-shadow: */
+    /*     0 0 5px #333, 0 0 10px #333, 0 0 20px #333, 0 0 40px #333, 0 0 80px #333; */
 }

@@ -28,6 +28,7 @@ const content = [
   ["/infosec", "information security (infosec)"],
   ["/linux", "linux"],
   ["/cli", "whats a command line??"],
+  ["/bootcamps", "should you do a bootcamp?"],
 ];
 
 export const Cards = component$(() => {

@@ -1,0 +1,13 @@
+mv src/routes/devops/index.mdx src/routes/devops/index@article.mdx
+mv src/routes/febe/index.mdx src/routes/febe/index@article.mdx
+mv src/routes/devsecops/index.mdx src/routes/devsecops/index@article.mdx
+mv src/routes/gitops/index.mdx src/routes/gitops/index@article.mdx
+mv src/routes/cli/index.mdx src/routes/cli/index@article.mdx
+mv src/routes/linux/index.mdx src/routes/linux/index@article.mdx
+mv src/routes/infosec/index.mdx src/routes/infosec/index@article.mdx
+mv src/routes/js/index.mdx src/routes/js/index@article.mdx
+mv src/routes/react/index.mdx src/routes/react/index@article.mdx
+mv src/routes/start/index.mdx src/routes/start/index@article.mdx
+mv src/routes/python/index.mdx src/routes/python/index@article.mdx
+mv src/routes/you/index.mdx src/routes/you/index@article.mdx
+mv src/routes/langs/index.mdx src/routes/langs/index@article.mdx
