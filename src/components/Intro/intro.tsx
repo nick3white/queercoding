@@ -46,7 +46,7 @@ const CloseBtn = component$<CloseBtnProps>(({ open }) => {
     </button>
   );
 });
-export const Intro = component$<IntroProps>((props) => {
+export const Intro = component$(() => {
   const intro = useSignal(true);
   return (
     <div
