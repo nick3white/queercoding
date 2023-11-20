@@ -12,6 +12,8 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
   });
 };
 
+export const theee = true;
+
 export default component$(() => {
   return <Slot />;
 });

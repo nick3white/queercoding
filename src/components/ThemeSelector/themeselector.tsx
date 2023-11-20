@@ -1,20 +1,21 @@
 import { useTheme } from "qwik-themes";
-import { component$ } from "@builder.io/qwik";
+import { $, component$, useOnWindow, useSignal } from "@builder.io/qwik";
 
 export const themes = [
   "arst",
-  "flowers-berries",
+  "berries",
   "flowers",
-  "flowers-with-sun",
+  "sun",
   "growing",
   // "heavy-psych",
   "ibm",
   // "icamera",
   "nightlights",
   "trees",
-  "winter-chicago",
+  "chicago",
   "winter",
   "wood",
+  // "basic",
 ];
 
 // function titleMaker(text: string) {
@@ -23,9 +24,36 @@ export const themes = [
 //     text.replace("-", " ").substr(1).toLowerCase()
 //   );
 // }
-
 export const ThemeSelector = component$(() => {
   const { theme, setTheme } = useTheme();
+  // const esc = useSignal(0);
+
+  // useEffect$(() => {
+  //   const handleKeyPress = (event) => {
+  //     if (event.key === "Escape") {
+  //       esc.value++;
+  //     }
+  //   };
+  //   window.addEventListener("keypress", handleKeyPress);
+  //
+  //   return () => {
+  //     window.removeEventListener("keypress", handleKeyPress);
+  //   };
+  // });
+  // useOnWindow(
+  //   "keyup",
+  //   $((event) => {
+  //     if (event.key === "Escape") {
+  //       esc.value++;
+  //       console.log(esc.value);
+  //       if (esc.value > 2) {
+  //         setTheme("basic");
+  //       }
+  //     } else {
+  //       console.log(event.key);
+  //     }
+  //   }),
+  // );
   return (
     <div class="theme-btn-container">
       {themes.map((th) => (
@@ -34,11 +62,7 @@ export const ThemeSelector = component$(() => {
           style={`background-image: url("/sm${th}.jpg"); width: ${Math.floor(
             (1 / themes.length) * 100,
           )}vw`}
-          class={`theme-btn ${
-            th === theme || (th === "nightlights" && theme === "undefined")
-              ? "vis"
-              : "invis"
-          }`}
+          class={`theme-btn ${th === theme ? "vis" : "invis"}`}
           onClick$={() => setTheme(th)}
         ></button>
       ))}

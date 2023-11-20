@@ -24,7 +24,7 @@ export default component$(() => {
         <RouterHead />
       </head>
       <body lang="en">
-        <ThemeProvider>
+        <ThemeProvider storageKey="qc-theme" defaultTheme="nightlights">
           <RouterOutlet />
         </ThemeProvider>
         <ServiceWorkerRegister />

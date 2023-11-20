@@ -20,21 +20,48 @@ export const Header = component$(() => {
       <div
         class={css({
           padding: "10px",
-          background: "var(--background)",
-          border: "2px solid var(--foreground)",
           display: "flex",
-          flexDirection: "column",
-          lg: {
-            flexDirection: "row",
-          },
-          justifyContent: "space-evenly",
+          flexDirection: "row",
           alignItems: "center",
+          justifyContent: "space-between",
+          border: "2px solid rgba(0,0,0,0)",
+          background: "rgba(0,0,0,0)",
+          lg: {
+            background: "var(--background)",
+            border: "2px solid var(--foreground)",
+            alignItems: "center",
+          },
           gap: "11px",
           textAlign: "center",
+          transition: "100ms",
+          "& h1, ul": {
+            height: "100%",
+            padding: "5px 10px",
+            background: "var(--background)",
+            border: "2px solid var(--foreground)",
+            lg: {
+              border: "2px solid rgba(0,0,0,0)",
+              background: "rgba(0,0,0,0)",
+            },
+          },
+          "& .wide": {
+            display: "none",
+            lg: {
+              display: "block",
+            },
+          },
+          "& .skinny": {
+            display: "block",
+            lg: {
+              display: "none",
+            },
+          },
         })}
       >
-        <h2>Welcome to</h2>
-        <h1>Queer Coding</h1>
+        <a href="/">
+          <h1 class="wide">Queer Coding</h1>
+          <h1 class="skinny">QC</h1>
+        </a>
         <ul
           class={css({
             listStyleType: "none",

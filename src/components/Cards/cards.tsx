@@ -8,7 +8,7 @@ const bigsquares = [8, 9, 37, 40, 41];
 // const leftOffAt = "phoenix project 2:22:39";
 
 const headers = [
-  "Featured content!  ",
+  "Featured content!",
   "Check out these boxes! They are extremely amazing content",
   "I put even more boxes down here, to represent the *SHEER ENORMITY* of our content selection",
   "we probably can't fill all these, but w/e, I like making boxes",
@@ -28,7 +28,7 @@ const content = [
   ["/infosec", "information security (infosec)"],
   ["/linux", "linux"],
   ["/cli", "whats a command line??"],
-  ["/bootcamps", "should you do a bootcamp?"],
+  // ["/bootcamps", "should you do a bootcamp?"],
 ];
 
 export const Cards = component$(() => {

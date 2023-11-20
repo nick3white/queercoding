@@ -16,14 +16,41 @@
   --color5: #cc8968;
   --color6: #4a768d;
   --color7: #9eb9c3;
-  --color8: #6e8188;
-  --color9: #524c57;
-  --color10: #45586d;
-  --color11: #476579;
-  --color12: #f0af46;
-  --color13: #cc8968;
-  --color14: #4a768d;
-  --color15: #9eb9c3;
+  --color8: #6e818866;
+  --color9: #524c5766;
+  --color10: #45586d66;
+  --color11: #47657966;
+  --color12: #f0af4666;
+  --color13: #cc896866;
+  --color14: #4a768d66;
+  --color15: #9eb9c366;
+}
+[data-theme="basic"] {
+  --wallpaper: url("/basic.jpg");
+  --wallpaper-sm: url("/smbasic.jpg");
+
+  /* Special */
+  --background: #0e1814;
+  --foreground: #ebf0e2;
+  --cursor: #ebf0e2;
+
+  /* Colors */
+  --color0: #0e1814;
+  --color1: #507499;
+  --color2: #2067d7;
+  --color3: #338cef;
+  --color4: #55a4cf;
+  --color5: #deefa4;
+  --color6: #a4cac5;
+  --color7: #ebf0e2;
+  --color8: #a4a89e66;
+  --color9: #50749966;
+  --color10: #2067d766;
+  --color11: #338cef66;
+  --color12: #55a4cf66;
+  --color13: #deefa466;
+  --color14: #a4cac566;
+  --color15: #ebf0e266;
 }
 [data-theme="arst"] {
   --wallpaper: url("/arst.jpg");
@@ -43,18 +70,18 @@
   --color5: #deefa4;
   --color6: #a4cac5;
   --color7: #ebf0e2;
-  --color8: #a4a89e;
-  --color9: #507499;
-  --color10: #2067d7;
-  --color11: #338cef;
-  --color12: #55a4cf;
-  --color13: #deefa4;
-  --color14: #a4cac5;
-  --color15: #ebf0e2;
+  --color8: #a4a89e66;
+  --color9: #50749966;
+  --color10: #2067d766;
+  --color11: #338cef66;
+  --color12: #55a4cf66;
+  --color13: #deefa466;
+  --color14: #a4cac566;
+  --color15: #ebf0e266;
 }
-[data-theme="flowers-berries"] {
-  --wallpaper: url("/flowers-berries.jpg");
-  --wallpaper-sm: url("/smflowers-berries.jpg");
+[data-theme="berries"] {
+  --wallpaper: url("/berries.jpg");
+  --wallpaper-sm: url("/smberries.jpg");
 
   /* Special */
   --background: #060803;
@@ -70,14 +97,14 @@
   --color5: #c7aa92;
   --color6: #ddd4a7;
   --color7: #f0ccde;
-  --color8: #a88e9b;
-  --color9: #b48f72;
-  --color10: #c0a46b;
-  --color11: #c1608b;
-  --color12: #ba9987;
-  --color13: #c7aa92;
-  --color14: #ddd4a7;
-  --color15: #f0ccde;
+  --color8: #a88e9b66;
+  --color9: #b48f7266;
+  --color10: #c0a46b66;
+  --color11: #c1608b66;
+  --color12: #ba998766;
+  --color13: #c7aa9266;
+  --color14: #ddd4a766;
+  --color15: #f0ccde66;
 }
 [data-theme="flowers"] {
   --wallpaper: url("/flowers.jpg");
@@ -97,18 +124,18 @@
   --color5: #dacbca;
   --color6: #e4d7d3;
   --color7: #ece9e3;
-  --color8: #a5a39e;
-  --color9: #b47689;
-  --color10: #b89494;
-  --color11: #caaaac;
-  --color12: #d5c6b6;
-  --color13: #dacbca;
-  --color14: #e4d7d3;
-  --color15: #ece9e3;
+  --color8: #a5a39e66;
+  --color9: #b4768966;
+  --color10: #b8949466;
+  --color11: #caaaac66;
+  --color12: #d5c6b666;
+  --color13: #dacbca66;
+  --color14: #e4d7d366;
+  --color15: #ece9e366;
 }
-[data-theme="flowers-with-sun"] {
-  --wallpaper: url("/flowers-with-sun.jpg");
-  --wallpaper-sm: url("/smflowers-with-sun.jpg");
+[data-theme="sun"] {
+  --wallpaper: url("/sun.jpg");
+  --wallpaper-sm: url("/smsun.jpg");
 
   /* Special */
   --background: #130b15;
@@ -124,14 +151,14 @@
   --color5: #a3a7d4;
   --color6: #d4a8d6;
   --color7: #c8e4f0;
-  --color8: #8c9fa8;
-  --color9: #04cfec;
-  --color10: #17cde2;
-  --color11: #5fd6f1;
-  --color12: #af96ac;
-  --color13: #a3a7d4;
-  --color14: #d4a8d6;
-  --color15: #c8e4f0;
+  --color8: #8c9fa866;
+  --color9: #04cfec66;
+  --color10: #17cde266;
+  --color11: #5fd6f166;
+  --color12: #af96ac66;
+  --color13: #a3a7d466;
+  --color14: #d4a8d666;
+  --color15: #c8e4f066;
 }
 [data-theme="growing"] {
   --wallpaper: url("/growing.jpg");
@@ -151,14 +178,14 @@
   --color5: #7bc353;
   --color6: #95ca5b;
   --color7: #aed2c0;
-  --color8: #799386;
-  --color9: #56a71e;
-  --color10: #2a854d;
-  --color11: #378f66;
-  --color12: #64ae57;
-  --color13: #7bc353;
-  --color14: #95ca5b;
-  --color15: #aed2c0;
+  --color8: #79938666;
+  --color9: #56a71e66;
+  --color10: #2a854d66;
+  --color11: #378f6666;
+  --color12: #64ae5766;
+  --color13: #7bc35366;
+  --color14: #95ca5b66;
+  --color15: #aed2c066;
 }
 [data-theme="heavy-psych"] {
   --wallpaper: url("/heavy-psych.jpg");
@@ -178,14 +205,14 @@
   --color5: #586999;
   --color6: #747fa0;
   --color7: #cbc7d1;
-  --color8: #8e8b92;
-  --color9: #718c57;
-  --color10: #a2a05e;
-  --color11: #d3c960;
-  --color12: #3956a1;
-  --color13: #586999;
-  --color14: #747fa0;
-  --color15: #cbc7d1;
+  --color8: #8e8b9266;
+  --color9: #718c5766;
+  --color10: #a2a05e66;
+  --color11: #d3c96066;
+  --color12: #3956a166;
+  --color13: #58699966;
+  --color14: #747fa066;
+  --color15: #cbc7d166;
 }
 [data-theme="ibm"] {
   --wallpaper: url("/ibm.jpg");
@@ -205,14 +232,14 @@
   --color5: #ed9c59;
   --color6: #f1b688;
   --color7: #f5dfc4;
-  --color8: #ab9c89;
-  --color9: #ac4f24;
-  --color10: #cc682d;
-  --color11: #ad674b;
-  --color12: #e48e46;
-  --color13: #ed9c59;
-  --color14: #f1b688;
-  --color15: #f5dfc4;
+  --color8: #ab9c8966;
+  --color9: #ac4f2466;
+  --color10: #cc682d66;
+  --color11: #ad674b66;
+  --color12: #e48e4666;
+  --color13: #ed9c5966;
+  --color14: #f1b68866;
+  --color15: #f5dfc466;
 }
 [data-theme="icamera"] {
   --wallpaper: url("/icamera.jpg");
@@ -232,14 +259,14 @@
   --color5: #7b8484;
   --color6: #a69f9a;
   --color7: #d4d8d9;
-  --color8: #949797;
-  --color9: #423f41;
-  --color10: #6a5a51;
-  --color11: #8a7164;
-  --color12: #99847a;
-  --color13: #7b8484;
-  --color14: #a69f9a;
-  --color15: #d4d8d9;
+  --color8: #94979766;
+  --color9: #423f4166;
+  --color10: #6a5a5166;
+  --color11: #8a716466;
+  --color12: #99847a66;
+  --color13: #7b848466;
+  --color14: #a69f9a66;
+  --color15: #d4d8d966;
 }
 [data-theme="nightlights"] {
   --wallpaper: url("/nightlights.jpg");
@@ -259,14 +286,14 @@
   --color5: #cc8968;
   --color6: #4a768d;
   --color7: #9eb9c3;
-  --color8: #6e8188;
-  --color9: #524c57;
-  --color10: #45586d;
-  --color11: #476579;
-  --color12: #f0af46;
-  --color13: #cc8968;
-  --color14: #4a768d;
-  --color15: #9eb9c3;
+  --color8: #6e818866;
+  --color9: #524c5766;
+  --color10: #45586d66;
+  --color11: #47657966;
+  --color12: #f0af4666;
+  --color13: #cc896866;
+  --color14: #4a768d66;
+  --color15: #9eb9c366;
 }
 [data-theme="trees"] {
   --wallpaper: url("/trees.jpg");
@@ -286,18 +313,18 @@
   --color5: #8e9206;
   --color6: #9e9d19;
   --color7: #d1c1a3;
-  --color8: #928772;
-  --color9: #a75518;
-  --color10: #8e6d20;
-  --color11: #8e7354;
-  --color12: #7b8603;
-  --color13: #8e9206;
-  --color14: #9e9d19;
-  --color15: #d1c1a3;
+  --color8: #92877266;
+  --color9: #a7551866;
+  --color10: #8e6d2066;
+  --color11: #8e735466;
+  --color12: #7b860366;
+  --color13: #8e920666;
+  --color14: #9e9d1966;
+  --color15: #d1c1a366;
 }
-[data-theme="winter-chicago"] {
-  --wallpaper: url("/winter-chicago.jpg");
-  --wallpaper-sm: url("/smwinter-chicago.jpg");
+[data-theme="chicago"] {
+  --wallpaper: url("/chicago.jpg");
+  --wallpaper-sm: url("/smchicago.jpg");
 
   /* Special */
   --background: #021212;
@@ -313,14 +340,14 @@
   --color5: #0c8fb1;
   --color6: #2596ab;
   --color7: #86cddb;
-  --color8: #5d8f99;
-  --color9: #bb9058;
-  --color10: #066e90;
-  --color11: #077093;
-  --color12: #507987;
-  --color13: #0c8fb1;
-  --color14: #2596ab;
-  --color15: #86cddb;
+  --color8: #5d8f9966;
+  --color9: #bb905866;
+  --color10: #066e9066;
+  --color11: #07709366;
+  --color12: #50798766;
+  --color13: #0c8fb166;
+  --color14: #2596ab66;
+  --color15: #86cddb66;
 }
 [data-theme="winter"] {
   --wallpaper: url("/winter.png");
@@ -340,14 +367,14 @@
   --color5: #5e7382;
   --color6: #667a89;
   --color7: #adb8c0;
-  --color8: #798086;
-  --color9: #485b65;
-  --color10: #576975;
-  --color11: #677078;
-  --color12: #a47f6a;
-  --color13: #5e7382;
-  --color14: #667a89;
-  --color15: #adb8c0;
+  --color8: #79808666;
+  --color9: #485b6566;
+  --color10: #57697566;
+  --color11: #67707866;
+  --color12: #a47f6a66;
+  --color13: #5e738266;
+  --color14: #667a8966;
+  --color15: #adb8c066;
 }
 /* CSS variables
    Generated by 'wal' */
@@ -369,12 +396,12 @@
   --color5: #a18262;
   --color6: #ab8b6e;
   --color7: #d7c6b5;
-  --color8: #968a7e;
-  --color9: #7a5b45;
-  --color10: #835e3c;
-  --color11: #8f6d4f;
-  --color12: #927055;
-  --color13: #a18262;
-  --color14: #ab8b6e;
-  --color15: #d7c6b5;
+  --color8: #968a7e66;
+  --color9: #7a5b4566;
+  --color10: #835e3c66;
+  --color11: #8f6d4f66;
+  --color12: #92705566;
+  --color13: #a1826266;
+  --color14: #ab8b6e66;
+  --color15: #d7c6b566;
 }
