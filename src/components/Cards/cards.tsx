@@ -22,10 +22,11 @@ const content = [
   ["/react", "react 101"],
   ["/python", "python 101"],
   ["/devops", "dev ops"],
-  ["/devsecops", "dev sec ops"],
-  ["/gitops", "git ops"],
-  ["/febe", "front end or back end?"],
   ["/infosec", "information security (infosec)"],
+  ["/engineering", "software engineering"],
+  // ["/devsecops", "dev sec ops"],
+  // ["/gitops", "git ops"],
+  ["/febe", "front end or back end?"],
   ["/linux", "linux"],
   ["/cli", "whats a command line??"],
   // ["/bootcamps", "should you do a bootcamp?"],
@@ -44,6 +45,7 @@ export const Cards = component$(() => {
           margin: "auto",
           display: "flex",
           flexWrap: "wrap",
+          justifyContent: "center",
           gap: "10px",
 
           "& .sq1x1": {

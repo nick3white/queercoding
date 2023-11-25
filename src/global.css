@@ -21,6 +21,9 @@ body,
 }
 
 body {
+  min-height: 100vh;
+  /* height: 100vh; */
+  /* height: 100%; */
   padding: 0;
   margin: 0;
   line-height: inherit;
@@ -29,6 +32,8 @@ body {
   background-position: center;
   background-attachment: fixed;
   color: var(--foreground);
+  display: flex;
+  flex-direction: column;
 }
 
 .surface-1 {
@@ -49,7 +54,7 @@ h1 {
 
 h2,
 h3 {
-  color: var(--color1);
+  color: var(--color6);
   font-size: clamp(1.66rem, 6vw, 2.5rem);
 }
 
@@ -130,4 +135,3 @@ h3 {
     0 0.1rem,
     100% 0.1rem;
 }
-
