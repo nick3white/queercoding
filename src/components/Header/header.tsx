@@ -4,16 +4,18 @@ import { css } from "~/styled-system/css";
 
 // export interface HeaderProps {}
 
-const navlinks = ["about"];
+const navlinks = ["about", "contact"];
 
 export const Header = component$(() => {
   return (
     <header
       class={css({
-        width: "100vw",
+        width: "100%",
         position: "sticky",
         top: "3px",
         zIndex: "1000",
+        boxSizing: "border-box",
+        // overflow: "hidden",
       })}
     >
       <ThemeSelector />
@@ -24,17 +26,25 @@ export const Header = component$(() => {
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between",
-          border: "2px solid rgba(0,0,0,0)",
+          borderBlock: "2px solid rgba(0,0,0,0)",
           background: "rgba(0,0,0,0)",
           lg: {
             background: "var(--background)",
-            border: "2px solid var(--foreground)",
+            borderBlock: "2px solid var(--foreground)",
             alignItems: "center",
           },
           gap: "11px",
           textAlign: "center",
           transition: "100ms",
+          overflow: "hidden",
+          "&  a ": {
+            overflow: "hidden",
+            lg: {
+              overflow: "visible",
+            },
+          },
           "& h1, ul": {
+            transition: "300ms",
             height: "100%",
             padding: "5px 10px",
             background: "var(--background)",
@@ -43,6 +53,10 @@ export const Header = component$(() => {
               border: "2px solid rgba(0,0,0,0)",
               background: "rgba(0,0,0,0)",
             },
+          },
+          "& h1:hover": {
+            textShadow:
+              "0 0 10px var(--color15), 0 0 20px var(--color15), 0 0 40px var(--color15), 0 0 80px var(--color15), 0 0 160px var(--color15), 0 0 320px var(--color15), 0 0 640px var(--color15)",
           },
           "& .wide": {
             display: "none",
@@ -70,14 +84,22 @@ export const Header = component$(() => {
             lg: {
               flexDirection: "column",
             },
+<<<<<<< HEAD
             "& p": {
               cursor: "not-allowed",
               height: "50px",
+=======
+            "& a": {
+              height: "48px",
+              lg: {
+                height: "50px",
+              },
+>>>>>>> 4697b6f19d85d46fa6664b9c80c805a69d3209d4
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               paddingInline: "7px",
-              border: "2px solid var(--color3)",
+              border: "2px solid var(--color6)",
               transition: "200ms",
               "&:hover": {
                 background: "var(--color6)",
