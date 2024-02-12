@@ -70,7 +70,8 @@ export const Header = component$(() => {
             lg: {
               flexDirection: "column",
             },
-            "& a": {
+            "& p": {
+              cursor: "not-allowed",
               height: "50px",
               display: "flex",
               justifyContent: "center",
@@ -87,7 +88,7 @@ export const Header = component$(() => {
         >
           {navlinks.map((link) => (
             <li key={link}>
-              <a href={`/${link}`}>{link}</a>
+              <p href={`/${link}`}>{link}</p>
             </li>
           ))}
         </ul>

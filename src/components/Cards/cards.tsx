@@ -79,6 +79,7 @@ export const Cards = component$(() => {
           background: "var(--color2)",
           border: "1px solid var(--color7)",
           transition: "200ms",
+          cursor: "not-allowed",
           "& span": {
             paddingBlock: "10px",
             textAlign: "center",
@@ -99,13 +100,13 @@ export const Cards = component$(() => {
       <h2 class="surface-1">{headers[0]}</h2>
       <div class="flex-container">
         {Array.from({ length: 6 }).map((_, i: number) => (
-          <a
-            href={i > content.length - 1 ? String(i) : content[i][0]}
+            // href={i > content.length - 1 ? String(i) : content[i][0]}
+          <p
             key={i}
             class={rectangles.includes(i) ? "box rect" : "box sq1x1"}
           >
             <span>{i > content.length - 1 ? String(i) : content[i][1]}</span>
-          </a>
+          </p>
         ))}
         <h2 class="surface-1">{headers[1]}</h2>
         {Array.from({ length: 15 }).map((_, i) => (
