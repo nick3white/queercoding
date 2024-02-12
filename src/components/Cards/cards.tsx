@@ -112,8 +112,7 @@ export const Cards = component$(() => {
         ))}
         <h2 class="surface-1">{headers[1]}</h2>
         {Array.from({ length: 15 }).map((_, i) => (
-          <a
-            href={i + 6 > content.length - 1 ? String(i) : content[i + 6][0]}
+          <p
             key={i}
             class={
               rectangles.includes(i)
@@ -126,7 +125,7 @@ export const Cards = component$(() => {
             <span>
               {i + 6 > content.length - 1 ? String(i) : content[i + 6][1]}
             </span>
-          </a>
+          </p>
         ))}
         <h2 class="surface-1">
           all of our sponsers can have their logos here, which will be like a

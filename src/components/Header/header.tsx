@@ -105,7 +105,7 @@ export const Header = component$(() => {
         >
           {navlinks.map((link) => (
             <li key={link}>
-              <p href={`/${link}`}>{link}</p>
+              <p>{link}</p>
             </li>
           ))}
         </ul>

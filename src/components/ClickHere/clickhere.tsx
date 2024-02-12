@@ -41,7 +41,7 @@ export const ClickHere = component$(() => {
           },
         })}
       >
-        If you're not sure where to go, <p href="/js">click here!</p>
+        If you're not sure where to go, <p >click here!</p>
         <CloseBtn open={show} />
       </div>
     );
