@@ -25,7 +25,8 @@ export const ClickHere = component$(() => {
           lineHeight: "clamp(1.66rem, 6vw, 2.5rem) !important",
           overflow: "hidden",
 
-          "& a": {
+          "& p": {
+            cursor: "not-allowed",
             color: "inherit !important",
             textDecoration: "none",
             background:
@@ -40,7 +41,7 @@ export const ClickHere = component$(() => {
           },
         })}
       >
-        If you're not sure where to go, <a href="/js">click here!</a>
+        If you're not sure where to go, <p href="/js">click here!</p>
         <CloseBtn open={show} />
       </div>
     );
