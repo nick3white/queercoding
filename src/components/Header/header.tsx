@@ -84,17 +84,12 @@ export const Header = component$(() => {
             lg: {
               flexDirection: "column",
             },
-<<<<<<< HEAD
             "& p": {
               cursor: "not-allowed",
-              height: "50px",
-=======
-            "& a": {
               height: "48px",
               lg: {
                 height: "50px",
               },
->>>>>>> 4697b6f19d85d46fa6664b9c80c805a69d3209d4
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
