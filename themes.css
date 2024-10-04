@@ -1,162 +1,182 @@
-body:not(.dark) {
-    --fg: var(--background);
-    --bg: var(--foreground);
-    --fg-rgb: var(--color0);
-    --bg-rgb: var(--color7);
+#berries, .berries {
+  --wallpaper: image-set('/images/berries-m.webp' 1x, '/images/berries-l.webp' 2x, '/images/berries.webp' 3x);
+  --background: #0c0c04;
+  --foreground: #f0ccde;
+  --color0: 12, 12, 4;
+  --color1: 180, 143, 114;
+  --color2: 192, 164, 108;
+  --color3: 194, 97, 139;
+  --color4: 186, 154, 135;
+  --color5: 199, 170, 146;
+  --color6: 221, 212, 167;
+  --color7: 240, 204, 222;
+  --color8: 168, 142, 155;
 }
-
-body.dark {
-    --fg: var(--foreground);
-    --bg: var(--background);
-    --fg-rgb: var(--color7);
-    --bg-rgb: var(--color0);
+#chicago, .chicago {
+  --wallpaper: image-set('/images/chicago-m.webp' 1x, '/images/chicago-l.webp' 2x, '/images/chicago.webp' 3x);
+  --background: #021212;
+  --foreground: #86cddb;
+  --color0: 2, 18, 18;
+  --color1: 187, 144, 88;
+  --color2: 6, 110, 144;
+  --color3: 7, 112, 147;
+  --color4: 80, 121, 135;
+  --color5: 12, 143, 177;
+  --color6: 37, 150, 171;
+  --color7: 134, 205, 219;
+  --color8: 93, 143, 153;
 }
-.htmx-btn {
-    transition: 200ms;
-    height: 50px;
-    border: 1px solid var(--fg);
-    cursor: pointer;
-    margin: 3px;
-    background: var(--bg);
-    color: var(--fg);
-    transition: 200ms;
-    &:hover {
-        background: color-mix(in oklab, var(--fg) 10%, var(--bg));
-    }
+#growing, .growing {
+  --wallpaper: image-set('/images/growing-m.webp' 1x, '/images/growing-l.webp' 2x, '/images/growing.webp' 3x);
+  --background: #072614;
+  --foreground: #aed2bf;
+  --color0: 7, 38, 20;
+  --color1: 86, 167, 30;
+  --color2: 42, 134, 77;
+  --color3: 55, 142, 102;
+  --color4: 101, 174, 86;
+  --color5: 122, 195, 82;
+  --color6: 148, 203, 92;
+  --color7: 174, 210, 191;
+  --color8: 121, 147, 133;
 }
-
-.hongkong,
-#hongkong {
-    --wallpaper: image-set(
-        "/images/hongkong-sm.webp" 1x,
-        "/images/hongkong.webp" 2x
-    );
-    --background: #0f100f;
-    --foreground: #dad2c5;
-    --color0: 15, 16, 15;
-    --color1: 142, 94, 49;
-    --color2: 137, 119, 94;
-    --color3: 122, 135, 118;
-    --color4: 156, 141, 113;
-    --color5: 195, 162, 116;
-    --color6: 173, 166, 145;
-    --color7: 218, 210, 197;
-    --color8: 152, 147, 137;
+#hongkong, .hongkong {
+  --wallpaper: image-set('/images/hongkong-m.webp' 1x, '/images/hongkong-l.webp' 2x, '/images/hongkong.webp' 3x);
+  --background: #0F100F;
+  --foreground: #dad2c5;
+  --color0: 15, 16, 15;
+  --color1: 142, 94, 49;
+  --color2: 137, 119, 94;
+  --color3: 122, 135, 118;
+  --color4: 156, 141, 113;
+  --color5: 195, 162, 116;
+  --color6: 173, 166, 145;
+  --color7: 218, 210, 197;
+  --color8: 152, 147, 137;
 }
-.red-light,
-#red-light {
-    --wallpaper: image-set(
-        "/images/red-light-sm.webp" 1x,
-        "/images/red-light.webp" 2x
-    );
-    --background: #0e0d10;
-    --foreground: #ddc9ac;
-    --color0: 14, 13, 16;
-    --color1: 76, 52, 44;
-    --color2: 54, 72, 63;
-    --color3: 93, 69, 53;
-    --color4: 96, 85, 76;
-    --color5: 152, 36, 17;
-    --color6: 194, 68, 42;
-    --color7: 221, 201, 172;
-    --color8: 154, 140, 120;
+#ibm, .ibm {
+  --wallpaper: image-set('/images/ibm-m.webp' 1x, '/images/ibm-l.webp' 2x, '/images/ibm.webp' 3x);
+  --background: #110404;
+  --foreground: #f4dfc4;
+  --color0: 17, 4, 4;
+  --color1: 172, 79, 36;
+  --color2: 204, 104, 45;
+  --color3: 173, 104, 75;
+  --color4: 225, 142, 72;
+  --color5: 236, 156, 89;
+  --color6: 239, 182, 136;
+  --color7: 244, 223, 196;
+  --color8: 170, 156, 137;
 }
-.sea,
-#sea {
-    --wallpaper: image-set("/images/sea-sm.webp" 1x, "/images/sea.webp" 2x);
-    --background: #000008;
-    --foreground: #f2f1ce;
-    --color0: 0, 0, 8;
-    --color1: 19, 125, 129;
-    --color2: 50, 141, 132;
-    --color3: 100, 162, 139;
-    --color4: 148, 181, 145;
-    --color5: 176, 204, 159;
-    --color6: 210, 218, 164;
-    --color7: 242, 241, 206;
-    --color8: 169, 168, 144;
+#nightlights, .nightlights {
+  --wallpaper: image-set('/images/nightlights-m.webp' 1x, '/images/nightlights-l.webp' 2x, '/images/nightlights.webp' 3x);
+  --background: #210a1f;
+  --foreground: #9eb9c4;
+  --color0: 33, 10, 31;
+  --color1: 82, 76, 87;
+  --color2: 69, 88, 109;
+  --color3: 71, 101, 121;
+  --color4: 239, 175, 71;
+  --color5: 204, 137, 105;
+  --color6: 74, 118, 141;
+  --color7: 158, 185, 196;
+  --color8: 110, 129, 137;
 }
-.sparkle-purple,
-#sparkle-purple {
-    --wallpaper: image-set(
-        "/images/sparkle-purple-sm.webp" 1x,
-        "/images/sparkle-purple.webp" 2x
-    );
-    --background: #07071b;
-    --foreground: #e4ccce;
-    --color0: 7, 7, 27;
-    --color1: 139, 63, 96;
-    --color2: 144, 77, 113;
-    --color3: 179, 110, 125;
-    --color4: 166, 107, 138;
-    --color5: 191, 123, 144;
-    --color6: 215, 162, 167;
-    --color7: 228, 204, 206;
-    --color8: 159, 142, 144;
+#red-light, .red-light {
+  --wallpaper: image-set('/images/red-light-m.webp' 1x, '/images/red-light-l.webp' 2x, '/images/red-light.webp' 3x);
+  --background: #0E0D10;
+  --foreground: #ddc9ac;
+  --color0: 14, 13, 16;
+  --color1: 76, 52, 44;
+  --color2: 54, 72, 63;
+  --color3: 93, 69, 53;
+  --color4: 96, 85, 76;
+  --color5: 152, 36, 17;
+  --color6: 194, 68, 42;
+  --color7: 221, 201, 172;
+  --color8: 154, 140, 120;
 }
-.trees,
-#trees {
-    --wallpaper: image-set("/images/trees-sm.webp" 1x, "/images/trees.webp" 2x);
-    --background: #220a12;
-    --foreground: #d1d5b7;
-    --color0: 34, 10, 18;
-    --color1: 89, 142, 48;
-    --color2: 103, 140, 93;
-    --color3: 113, 141, 114;
-    --color4: 131, 134, 118;
-    --color5: 153, 171, 122;
-    --color6: 190, 194, 126;
-    --color7: 209, 213, 183;
-    --color8: 146, 149, 128;
+#sea, .sea {
+  --wallpaper: image-set('/images/sea-m.webp' 1x, '/images/sea-l.webp' 2x, '/images/sea.webp' 3x);
+  --background: #000008;
+  --foreground: #f2f1ce;
+  --color0: 0, 0, 8;
+  --color1: 19, 125, 129;
+  --color2: 50, 141, 132;
+  --color3: 100, 162, 139;
+  --color4: 148, 181, 145;
+  --color5: 176, 204, 159;
+  --color6: 210, 218, 164;
+  --color7: 242, 241, 206;
+  --color8: 169, 168, 144;
 }
-.wall-balloons,
-html,
-#wall-balloons {
-    --wallpaper: image-set(
-        "/images/wall-balloons-sm.webp" 1x,
-        "/images/wall-balloons.webp" 2x
-    );
-    --background: #1e1b19;
-    --foreground: #e9e3e2;
-    --color0: 30, 27, 25;
-    --color1: 180, 191, 190;
-    --color2: 199, 185, 175;
-    --color3: 203, 198, 185;
-    --color4: 229, 201, 164;
-    --color5: 184, 197, 202;
-    --color6: 212, 208, 205;
-    --color7: 233, 227, 226;
-    --color8: 163, 158, 158;
+#sparkle-purple, .sparkle-purple {
+  --wallpaper: image-set('/images/sparkle-purple-m.webp' 1x, '/images/sparkle-purple-l.webp' 2x, '/images/sparkle-purple.webp' 3x);
+  --background: #07071B;
+  --foreground: #e4ccce;
+  --color0: 7, 7, 27;
+  --color1: 139, 63, 96;
+  --color2: 144, 77, 113;
+  --color3: 179, 110, 125;
+  --color4: 166, 107, 138;
+  --color5: 191, 123, 144;
+  --color6: 215, 162, 167;
+  --color7: 228, 204, 206;
+  --color8: 159, 142, 144;
 }
-
-@font-face {
-    font-family: "styrene";
-    font-weight: 400;
-    src: url("/fonts/StyreneB-Regular-Web.woff");
+#sun, .sun {
+  --wallpaper: image-set('/images/sun-m.webp' 1x, '/images/sun-l.webp' 2x, '/images/sun.webp' 3x);
+  --background: #130b15;
+  --foreground: #c8e4ef;
+  --color0: 19, 11, 21;
+  --color1: 24, 205, 227;
+  --color2: 95, 214, 240;
+  --color3: 164, 147, 170;
+  --color4: 203, 155, 179;
+  --color5: 163, 167, 212;
+  --color6: 211, 168, 214;
+  --color7: 200, 228, 239;
+  --color8: 140, 159, 167;
 }
-
-@font-face {
-    font-family: "styrene";
-    font-weight: 700;
-    src: url("/fonts/StyreneB-Bold-Web.woff");
+#trees, .trees {
+  --wallpaper: image-set('/images/trees-m.webp' 1x, '/images/trees-l.webp' 2x, '/images/trees.webp' 3x);
+  --background: #220a12;
+  --foreground: #d1d5b7;
+  --color0: 34, 10, 18;
+  --color1: 89, 142, 48;
+  --color2: 103, 140, 93;
+  --color3: 113, 141, 114;
+  --color4: 131, 134, 118;
+  --color5: 153, 171, 122;
+  --color6: 190, 194, 126;
+  --color7: 209, 213, 183;
+  --color8: 146, 149, 128;
 }
-body {
-    margin: 0;
-    padding: 0;
-    /* width: 100vw; */
-    /* height: 100vh; */
-    font-family: "argon", monospace;
-    color: var(--foreground);
+#wall-balloons, .wall-balloons {
+  --wallpaper: image-set('/images/wall-balloons-m.webp' 1x, '/images/wall-balloons-l.webp' 2x, '/images/wall-balloons.webp' 3x);
+  --background: #1e1b19;
+  --foreground: #e9e3e2;
+  --color0: 30, 27, 25;
+  --color1: 180, 191, 190;
+  --color2: 199, 185, 175;
+  --color3: 203, 198, 185;
+  --color4: 229, 201, 164;
+  --color5: 184, 197, 202;
+  --color6: 212, 208, 205;
+  --color7: 233, 227, 226;
+  --color8: 163, 158, 158;
 }
-.bg {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-    background-image: var(--wallpaper);
-    background-position: center;
-    background-size: cover;
+#wood, .wood {
+  --wallpaper: image-set('/images/wood-m.webp' 1x, '/images/wood-l.webp' 2x, '/images/wood.webp' 3x);
+  --background: #0F0402;
+  --foreground: #d7c6b5;
+  --color0: 15, 4, 2;
+  --color1: 122, 91, 69;
+  --color2: 131, 94, 60;
+  --color3: 143, 109, 79;
+  --color4: 146, 112, 85;
+  --color5: 161, 130, 98;
+  --color6: 171, 139, 110;
+  --color7: 215, 198, 181;
+  --color8: 150, 138, 126;
 }

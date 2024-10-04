@@ -1,0 +1,118 @@
+.htmx-btn {
+    transition: 200ms;
+    height: 50px;
+    border: 1px solid var(--fg);
+    cursor: pointer;
+    margin: 3px;
+    background: var(--bg);
+    color: var(--fg);
+    transition: 200ms;
+    &:hover {
+        background: color-mix(in oklab, var(--fg) 10%, var(--bg));
+    }
+}
+
+.hongkong,
+#hongkong {
+    --wallpaper: image-set(
+        "/images/hongkong-sm.webp" 1x,
+        "/images/hongkong.webp" 2x
+    );
+    --background: #0f100f;
+    --foreground: #dad2c5;
+    --color0: 15, 16, 15;
+    --color1: 142, 94, 49;
+    --color2: 137, 119, 94;
+    --color3: 122, 135, 118;
+    --color4: 156, 141, 113;
+    --color5: 195, 162, 116;
+    --color6: 173, 166, 145;
+    --color7: 218, 210, 197;
+    --color8: 152, 147, 137;
+}
+.red-light,
+#red-light {
+    --wallpaper: image-set(
+        "/images/red-light-sm.webp" 1x,
+        "/images/red-light.webp" 2x
+    );
+    --background: #0e0d10;
+    --foreground: #ddc9ac;
+    --color0: 14, 13, 16;
+    --color1: 76, 52, 44;
+    --color2: 54, 72, 63;
+    --color3: 93, 69, 53;
+    --color4: 96, 85, 76;
+    --color5: 152, 36, 17;
+    --color6: 194, 68, 42;
+    --color7: 221, 201, 172;
+    --color8: 154, 140, 120;
+}
+.sea,
+#sea {
+    --wallpaper: image-set("/images/sea-sm.webp" 1x, "/images/sea.webp" 2x);
+    --background: #000008;
+    --foreground: #f2f1ce;
+    --color0: 0, 0, 8;
+    --color1: 19, 125, 129;
+    --color2: 50, 141, 132;
+    --color3: 100, 162, 139;
+    --color4: 148, 181, 145;
+    --color5: 176, 204, 159;
+    --color6: 210, 218, 164;
+    --color7: 242, 241, 206;
+    --color8: 169, 168, 144;
+}
+.sparkle-purple,
+#sparkle-purple {
+    --wallpaper: image-set(
+        "/images/sparkle-purple-sm.webp" 1x,
+        "/images/sparkle-purple.webp" 2x
+    );
+    --background: #07071b;
+    --foreground: #e4ccce;
+    --color0: 7, 7, 27;
+    --color1: 139, 63, 96;
+    --color2: 144, 77, 113;
+    --color3: 179, 110, 125;
+    --color4: 166, 107, 138;
+    --color5: 191, 123, 144;
+    --color6: 215, 162, 167;
+    --color7: 228, 204, 206;
+    --color8: 159, 142, 144;
+}
+.trees,
+#trees {
+    --wallpaper: image-set("/images/trees-sm.webp" 1x, "/images/trees.webp" 2x);
+    --background: #220a12;
+    --foreground: #d1d5b7;
+    --color0: 34, 10, 18;
+    --color1: 89, 142, 48;
+    --color2: 103, 140, 93;
+    --color3: 113, 141, 114;
+    --color4: 131, 134, 118;
+    --color5: 153, 171, 122;
+    --color6: 190, 194, 126;
+    --color7: 209, 213, 183;
+    --color8: 146, 149, 128;
+}
+.wall-balloons,
+html,
+#wall-balloons {
+    --wallpaper: image-set(
+        "/images/wall-balloons-sm.webp" 1x,
+        "/images/wall-balloons.webp" 2x
+    );
+    --background: #1e1b19;
+    --foreground: #e9e3e2;
+    --color0: 30, 27, 25;
+    --color1: 180, 191, 190;
+    --color2: 199, 185, 175;
+    --color3: 203, 198, 185;
+    --color4: 229, 201, 164;
+    --color5: 184, 197, 202;
+    --color6: 212, 208, 205;
+    --color7: 233, 227, 226;
+    --color8: 163, 158, 158;
+}
+

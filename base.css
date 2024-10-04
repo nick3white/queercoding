@@ -1,7 +1,37 @@
 @import './themes.css';
 
+body:not(.dark) {
+    --fg: var(--background);
+    --bg: var(--foreground);
+    --fg-rgb: var(--color0);
+    --bg-rgb: var(--color7);
+}
+
+body.dark {
+    --fg: var(--foreground);
+    --bg: var(--background);
+    --fg-rgb: var(--color7);
+    --bg-rgb: var(--color0);
+}
 body {
   padding-top: 66px;
+    margin: 0;
+    padding: 0;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    font-family: "argon", monospace;
+    color: var(--foreground);
+}
+@font-face {
+    font-family: "styrene";
+    font-weight: 400;
+    src: url("/fonts/StyreneB-Regular-Web.woff");
+}
+
+@font-face {
+    font-family: "styrene";
+    font-weight: 700;
+    src: url("/fonts/StyreneB-Bold-Web.woff");
 }
 .text, .contact-section {
   background: var(--bg);
@@ -215,4 +245,17 @@ header {
 
 .contact-section button {
     cursor: pointer;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+    background-image: var(--wallpaper);
+    background-position: center;
+    background-size: cover;
 }
