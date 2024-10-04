@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="base.css" />
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <script src="theme-switcher.js"></script>
+    <title>Queer Coding</title>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <theme-switcher
+      themes="hongkong,red-light,sea,sparkle-purple,trees,wall-balloons"
+      ext="webp"
+      include-darkmode="true"
+    ></theme-switcher>
+
+    <header>
+      <h1 class="wide">Queer Coding</h1>
+      <h1 class="skinny">QC</h1>
+    </header>
+
+    <div class="text closed" id="expandable-text">
+      <button id="close-button">
+        <div class="ex"></div>
+        <div class="xe"></div>
+      </button>
+      <div class="wrapper">
+        <h3>
+          Some day, I hope this will be more than just a personal passion project, but, for now, that's what it is.
+        </h3>
+
+        <p>
+          I help coach and guide aspiring developers from the LGBTQ+ community.  If you're interested, please use the contact form below!
+        </p>
+
+
+        <p class="tier-2">
+          I was inspired to create this project by the incredibly strong, resilient, and brave LGBT people I've had the pleasure of knowing. I was also inspired by the immense pain I've seen, the drug addictions, the suicides, the agony I've seen.
+        </p>
+
+        <p class="tier-2">
+          Coming out is hard. People get kicked out of their houses, fired from their jobs, lose all their possessions, burn out all their friendships for staying too long on the couch - just because they couldn't hide who they are anymore. I can't help people through the pain, and I can't offer my couch to everyone. But, once things are stabilized, I can help you make up for lost time; once your past is settled, and your present is safe, I can help you build a future. That is - if you want a future in tech. That's about all I'm qualified to help with.
+        </p>
+
+        <p class="tier-2">
+          I'm not a teacher, but luckily I don't need to be, at this point -- the internet is stuffed with instructions on how to learn to code. It's honestly overwhelming - it can be hard to know where to start, and where to go next. As a self-taught developer, I'm pretty good at navigating that stuff. Eventually I'll finish putting together a few basic paths which should be enough to get people started in a few different areas that you might be interested in.   
+          In the meantime, I just kinda wing it, and it works ok.
+        </p>
+
+        <p class="tier-2">
+          Software engineering, web development, back end or front end development, DevOps, DevSecOps, GitOps, data science, infosec - there are so many options, and they're all really interesting and rewarding career paths. It will take some dedication and motivation to get from 0 to employable, but we won't pressure you, and we won't shame you if you disappear for a few months, or years. We get it. Do your best and we'll do our best to help. 
+        </p>
+
+        <p class="tier-2">
+          The internet was built on people giving their knowledge away for free; it started that way, it continued that way, and it's still like that today...mostly. There are generations of free content that could make you a master of computer science - or, more realistically, there's enough to get you a nice, comfortable job with health benefits, vacation days, all that nice stuff. There are generations of software engineers, developers, etc, that are all self taught, and they all started where you are now. You can do it!
+        </p>
+
+      </div>
+    </div> 
+    <section class="contact-section">
+      <article id="contact">
+        <form action="https://formsubmit.co/4c5fb5bc125c9ac8405bf2fbe9a6a4a2" method="POST">
+          <div class="left">
+            <input name="name" placeholder="Enter name..." required="" type="name" class="name">
+            <input name="email" placeholder="Enter email..." required="" type="email" class="email"></div>
+          <div class="right">
+            <textarea 
+              cols="30" 
+              name="message" 
+              placeholder="Add a message..." 
+              required=""
+              rows="10" 
+              class="message"></textarea>
+            <button class="submit">
+              Say hi!
+            </button>
+          </div>
+        </form>
+      </article>
+
+    </section>
+    <!-- <a href="#top" id="top-btn"><i></i> -->
+    <!--     <p>back to top</p> -->
+    <!-- </a> -->
+  </body>
+  <script>
+const closeButton = document.getElementById("close-button");
+const expandableText = document.getElementById("expandable-text");
+closeButton.addEventListener("click", () => {
+  expandableText.classList.toggle("closed");
+})
+  </script>
+</html>

@@ -1,0 +1,218 @@
+@import './themes.css';
+
+body {
+  padding-top: 66px;
+}
+.text, .contact-section {
+  background: var(--bg);
+  color: var(--fg);
+  margin: 33px auto;
+  width: 50vw;
+  border: 3px solid var(--fg);
+  border-radius: 9px;
+  transition: 300ms;
+  position: relative;
+  & .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* margin-right: 9px; */
+    width: calc(100% - 66px);
+    z-index: 3;
+    padding: 33px 42px 33px 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 33px;
+  }
+& h3 {
+    margin: 0;
+  }
+  & p {
+    margin: 0;
+    padding: 0;
+  }
+}
+.text.closed {
+  height: 200px;
+
+  overflow: hidden;
+  & .tier-2 {
+    display: none;
+  }
+  & .ex {
+    transform: translate(-50%, -50%) rotate(90deg) !important;
+  }
+  & .xe {
+    transform: translate(-50%, -50%) rotate(0deg) !important;
+  }
+
+}
+.text:not(.closed) {
+  height: calc(80vh - 150px);
+  overflow: hidden;
+  & .wrapper {
+    overflow: scroll;
+
+  }
+  & .tier-2 {
+    display: block;
+  }
+  & .ex {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  & .xe {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  #close-button {
+    top: 3px;
+    /* position: sticky; */
+  }
+}
+header {
+  width: 100%;
+  position: sticky;
+  top: 50px;
+  z-index: 3;
+  box-sizing: border-box;
+
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* border-block: 2px solid var(--fg); */
+  gap: 11px;
+  text-align: center;
+  transition: 100ms;
+  overflow: hidden;
+  & h1, ul {
+    transition: 300ms;
+    height: 100%;
+    padding: 5px 10px;
+    background: var(--bg);
+
+    color: var(--fg);
+    border: 2px solid var(--fg);
+  }
+  & h1:hover {
+    text-shadow:
+      0 0 10px var(--color15), 0 0 20px var(--color15), 0 0 40px var(--color15), 0 0 80px var(--color15), 0 0 160px var(--color15), 0 0 320px var(--color15), 0 0 640px var(--color15);
+  }
+}
+
+@media screen and  (min-width: 1000px) {
+  .header-menu {
+    height: 50px;
+    flex-direction: column;
+  }
+  .wide {
+    display: block;
+  }
+  .skinny {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header-menu {
+    height: 48px;
+    flex-direction: row;
+  }
+  .wide {
+    display: none;
+  }
+  .skinny {
+    display: block;
+  }
+}
+#close-button {
+  z-index: 4;
+  position: absolute;
+  display: block;
+  /* position: sticky; */
+  /* top: calc(100% - 50px); */
+  top: calc(100% - 43px);
+  /* border: 1px solid var(--bg); */
+  /* border-radius: 3px; */
+  /* background: var(--fg); */
+  border: 0;
+  background: transparent;
+  /* transform: translateY(100%); */
+  /* bottom: 3px; */
+  right: 3px;
+  width: 40px;
+  height: 40px;
+  transition: 250ms;
+  &:hover  {
+    box-shadow:
+      0 0 10px var(--color15), 0 0 20px var(--color15), 0 0 40px var(--color15), 0 0 80px var(--color15), 0 0 160px var(--color15), 0 0 320px var(--color15), 0 0 640px var(--color15);
+  }
+  & div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 5px;
+    background: var(--fg);
+    transition: transform 0.2s ease-out;
+    transform-origin: center;
+  }
+}
+
+.for-later {
+  /* display: none; */
+  text-decoration: line-through;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* contact */
+
+.contact-section {
+  padding-block: 33px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.contact-section form {
+    display: flex;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+.contact-section .left,
+.contact-section .right {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+.contact-section input,
+.contact-section textarea,
+
+.contact-section button {
+
+    background: var(--bg);
+    border: 2px solid var(--fg);
+    box-shadow: 0 0 3px 3px var(--bg);
+    color: var(--fg);
+    padding: 16px;
+}
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder,
+
+.contact-section button::placeholder {
+    color: rgba(var(--fg-rgb), 0.77);
+}
+
+.contact-section button {
+    cursor: pointer;
+}

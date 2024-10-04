@@ -1,7 +1,5 @@
 # queercoding
 
-## Teaching Queers How to Code!
-
 A site for the LGBT community who want to embark on a career in coding.
 
 I was inspired to create this project by the incredibly strong, resilient, and brave LGBT people I've had the pleasure of knowing. I was also inspired by the immense pain I've seen, the drug addictions, suicides, and agony I've seen. I write this thinking of M.
