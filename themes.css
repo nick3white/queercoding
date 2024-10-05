@@ -68,7 +68,7 @@
   --color7: 244, 223, 196;
   --color8: 170, 156, 137;
 }
-#nightlights, .nightlights {
+#nightlights, .nightlights, html {
   --wallpaper: image-set('/images/nightlights-m.webp' 1x, '/images/nightlights-l.webp' 2x, '/images/nightlights.webp' 3x);
   --background: #210a1f;
   --foreground: #9eb9c4;
